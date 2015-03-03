@@ -1,0 +1,11 @@
+<h2> Twee-tails!</h2>
+
+<h3>Twoth {{user}}: </h3>
+<p>{{body}}</p>
+<p>{{dateShow}}</p>
+
+<form id="commentsForm">
+  {{input type="text" value=commenter placeholder="Enter Username"}}
+  {{textarea rows=3 value=userComment placeholder="Enter Comment" maxlength="500"}}
+<button {{action "comment"}} class="btn btn-primary">Add a Comment!</button>
+</form>

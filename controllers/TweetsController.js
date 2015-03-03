@@ -6,7 +6,8 @@ Twitter.TweetsController = Ember.ArrayController.extend({
       tweets.addObject({id: (tweets.length +1).toString(),
                         user: this.userName,
                         body: this.userTweet,
-                        date: Date.now().toString()
+                        date: Date.now().toString(),
+                        dateShow: (new Date()).toString()
       });
     }
   }

@@ -2,7 +2,7 @@
 
 <form id="tweetForm">
   {{input type="text" value=userName placeholder="Enter Username"}}
-  {{input type="textarea" value=userTweet placeholder="Enter Tweet" maxlength="141"}}
+  {{textarea rows=3 value=userTweet placeholder="Enter Tweet" maxlength="141"}}
 <button {{action "save"}} class="btn btn-primary">Add a Tweet!</button>
 </form>
 
