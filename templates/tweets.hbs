@@ -1,7 +1,13 @@
 <h2>Twitter 2: The Clone of Twitter</h2>
 
+<form id="tweetForm">
+  {{input type="text" value=userName placeholder="Enter Username"}}
+  {{input type="textarea" value=userTweet placeholder="Enter Tweet" maxlength="141"}}
+<button {{action "save"}} class="btn btn-primary">Add a Tweet!</button>
+</form>
+
 <ul>
   {{#each}}
-    <li><strong>{{user}}</strong>: {{body}}</li>
+    <li><strong>{{user}}</strong>: {{#link-to 'tweet' this.id}}{{body}}{{/link-to}}</li>
   {{/each}}
 </ul>
