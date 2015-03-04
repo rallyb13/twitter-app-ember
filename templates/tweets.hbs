@@ -3,11 +3,12 @@
 <form id="tweetForm">
   {{input type="text" value=userName placeholder="Enter Username"}}
   {{textarea rows=3 value=userTweet placeholder="Enter Tweet" maxlength="141"}}
+
 <button {{action "save"}} class="btn btn-primary">Add a Tweet!</button>
 </form>
 
 <ul>
-  {{#each}}
+  {{#each controller}}
     <li><strong>{{user}}</strong>: {{#link-to 'tweet' this.id}}{{body}}{{/link-to}}</li>
   {{/each}}
 </ul>

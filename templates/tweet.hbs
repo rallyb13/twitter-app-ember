@@ -4,8 +4,14 @@
 <p>{{body}}</p>
 <p>{{dateShow}}</p>
 
+<!-- <ul>
+    {{#each}}
+      <li>{{commenter}} says: {{userComment}}</li>
+    {{/each}}
+</ul> -->
+
 <form id="commentsForm">
   {{input type="text" value=commenter placeholder="Enter Username"}}
   {{textarea rows=3 value=userComment placeholder="Enter Comment" maxlength="500"}}
-<button {{action "comment"}} class="btn btn-primary">Add a Comment!</button>
+<button {{action "addComment"}} class="btn btn-primary">Add a Comment!</button>
 </form>

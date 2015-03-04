@@ -1,0 +1,19 @@
+html,
+body{
+  font-family: 'Gruppo', cursive;
+}
+
+.ember-text-area{
+  width: 400px;
+}
+
+.ember-text-field,
+.ember-text-area{
+  margin-bottom: 20px;
+  margin-right: 600px;
+
+}
+
+.btn{
+  margin-left: 3%;
+}

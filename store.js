@@ -41,3 +41,6 @@ var tweets = [
 },
 
 ]
+
+
+var comments = []
